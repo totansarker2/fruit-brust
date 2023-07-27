@@ -11,9 +11,21 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Fruit Burst</title>
 
     <style>
+        body, .font-lato{
+            font-family: 'Lato', sans-serif;
+        }
+
       .team-section {
         background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
           url("./images/banner1.png");
@@ -70,7 +82,9 @@
       </nav>
 
       <!-- banner-section -->
-      <section class="w-full md:w-9/12 relative flex flex-col items-center text-white text-center">
+      <section
+        class="w-full md:w-9/12 max-h-[600px] relative flex flex-col items-center text-white text-center"
+      >
         <div class="carousel">
           <div id="slide1" class="carousel-item relative w-full">
             <img src="./images/banner1.png" class="w-full" />
@@ -110,23 +124,31 @@
           </div>
         </div>
 
-         <div class="w-10/12 relative transform -translate-y-1/2 flex flex-col items-center justify-center border">
-            <h1 class="text-7xl">Exotic tastes at your doorstep</h1>
-            <p>We supply highly quality organic products</p>
-            <button>Shop Now</button>
-
-            <div class="w-full flex justify-evenly bg-white p-4">
-                <img src="./images/fruit1.png" alt="">
-                <img src="./images/fruit2.png" alt="">
-                <img src="./images/fruit3.png" alt="">
-                <img src="./images/fruit4.png" alt="">
-                <img src="./images/fruit5.png" alt="">
-            </div>
-         </div>
+        <div
+          class="w-10/12 h-full absolute top-28 flex flex-col items-center justify-between"
+        >
+          <div class="space-y-2">
+            <h1 class="text-7xl font-extrabold">
+              Exotic tastes at your<br />
+              doorstep
+            </h1>
+            <p class="text-xl font-medium">We supply highly quality organic products</p>
+            <button class="btn btn-primary bg-[#F85559] border-none text-xl font-extrabold capitalize">
+              Shop Now
+            </button>
+          </div>
+          <div class="w-full flex justify-evenly bg-white py-16">
+            <img src="./images/fruit1.png" alt="" />
+            <img src="./images/fruit2.png" alt="" />
+            <img src="./images/fruit3.png" alt="" />
+            <img src="./images/fruit4.png" alt="" />
+            <img src="./images/fruit5.png" alt="" />
+          </div>
+        </div>
       </section>
     </header>
 
-    <main class="w-full flex flex-col items-center py-12 space-y-6 gap-8">
+    <main class="w-full flex flex-col items-center py-12 space-y-6 gap-8 mt-40">
       <!-- Deal-section -->
       <section class="w-full md:w-9/12 flex flex-col items-center">
         <div class="flex">
@@ -223,8 +245,8 @@
             </div>
             <span>Apples</span>
             <!-- Open the modal using ID.showModal() method -->
-            <button class="btn" onclick="my_modal_1.showModal()">
-              open modal
+            <button class="text-[#F85559]" onclick="my_modal_1.showModal()">
+              Details
             </button>
             <dialog id="my_modal_1" class="modal">
               <form method="dialog" class="modal-box">
@@ -234,7 +256,7 @@
                 </p>
                 <div class="modal-action">
                   <!-- if there is a button in form, it will close the modal -->
-                  <button class="btn">Close</button>
+                  <button class="text-[#F85559]">Close</button>
                 </div>
               </form>
             </dialog>
@@ -298,8 +320,8 @@
             </div>
             <span>Orange</span>
             <!-- Open the modal using ID.showModal() method -->
-            <button class="btn" onclick="my_modal_2.showModal()">
-              open modal
+            <button class="text-[#F85559]" onclick="my_modal_2.showModal()">
+              Details
             </button>
             <dialog id="my_modal_2" class="modal">
               <form method="dialog" class="modal-box">
@@ -309,7 +331,7 @@
                 </p>
                 <div class="modal-action">
                   <!-- if there is a button in form, it will close the modal -->
-                  <button class="btn">Close</button>
+                  <button class="text-[#F85559]">Close</button>
                 </div>
               </form>
             </dialog>
@@ -373,8 +395,8 @@
             </div>
             <span>Red Dragon</span>
             <!-- Open the modal using ID.showModal() method -->
-            <button class="btn" onclick="my_modal_3.showModal()">
-              open modal
+            <button class="text-[#F85559]" onclick="my_modal_3.showModal()">
+              Details
             </button>
             <dialog id="my_modal_3" class="modal">
               <form method="dialog" class="modal-box">
@@ -384,7 +406,7 @@
                 </p>
                 <div class="modal-action">
                   <!-- if there is a button in form, it will close the modal -->
-                  <button class="btn">Close</button>
+                  <button class="text-[#F85559]">Close</button>
                 </div>
               </form>
             </dialog>
@@ -448,8 +470,8 @@
             </div>
             <span>Banana</span>
             <!-- Open the modal using ID.showModal() method -->
-            <button class="btn" onclick="my_modal_4.showModal()">
-              open modal
+            <button class="text-[#F85559]" onclick="my_modal_4.showModal()">
+              Details
             </button>
             <dialog id="my_modal_4" class="modal">
               <form method="dialog" class="modal-box">
@@ -459,14 +481,16 @@
                 </p>
                 <div class="modal-action">
                   <!-- if there is a button in form, it will close the modal -->
-                  <button class="btn">Close</button>
+                  <button class="text-[#F85559]">Close</button>
                 </div>
               </form>
             </dialog>
           </div>
         </div>
 
-        <button>Shop All</button>
+        <button class="btn btn-primary bg-[#F85559] border-none">
+          Shop All
+        </button>
       </section>
 
       <!-- Team-section -->
