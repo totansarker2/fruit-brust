@@ -142,7 +142,9 @@
               Shop Now
             </button>
           </div>
-          <div class="w-full flex justify-evenly bg-white py-12 text-black shadow-md">
+          <div
+            class="w-full flex justify-evenly bg-white py-12 text-black shadow-md"
+          >
             <div class="flex flex-col gap-3">
               <img src="./images/fruit1.png" alt="" />
               <span>Strawberry</span>
@@ -170,45 +172,50 @@
 
     <main class="w-full flex flex-col items-center py-12 space-y-6 gap-8 mt-40">
       <!-- Deal-section -->
-      <section class="w-full md:w-9/12 flex flex-col items-center">
-        <div class="flex">
-          <div>
-            <h2>Deal of the day</h2>
-            <p>
+      <section class="w-full md:w-9/12 flex flex-col items-center gap-12">
+        <div class="w-full flex justify-between">
+          <div class="space-y-6">
+            <h2 class="text-5xl font-extrabold text-[#121212]">
+              Deal of the day
+            </h2>
+            <p class="w-8/12 font-normal leading-7 text-[#717171]">
               Contrary to popular belief, is not simply random text. It has
               roots in a piece of classical Latin literature from 45 BC, making
               it over 2000 years old.
             </p>
           </div>
 
-          <ul class="flex">
-            <li>
-              <h2>29</h2>
-              <p>Days</p>
+          <ul class="flex gap-4 text-center">
+            <li class="space-y-2">
+              <h2 class="text-5xl font-extrabold text-[#121212]">29</h2>
+              <p class="font-normal text-[#717171]">Days</p>
             </li>
-            <li>:</li>
-            <li>
-              <h2>15</h2>
-              <p>Hours</p>
+            <li class="text-5xl font-extrabold text-[#121212]">:</li>
+            <li class="space-y-2">
+              <h2 class="text-5xl font-extrabold text-[#121212]">15</h2>
+              <p class="font-normal text-[#717171]">Hours</p>
             </li>
-            <li>:</li>
-            <li>
-              <h2>25</h2>
-              <p>Minutes</p>
+            <li class="text-5xl font-extrabold text-[#121212]">:</li>
+            <li class="space-y-2">
+              <h2 class="text-5xl font-extrabold text-[#121212]">25</h2>
+              <p class="font-normal text-[#717171]">Minutes</p>
             </li>
-            <li>:</li>
-            <li>
-              <h2>08</h2>
-              <p>Seconds</p>
+            <li class="text-5xl font-extrabold text-[#121212]">:</li>
+            <li class="space-y-2">
+              <h2 class="text-5xl font-extrabold text-[#121212]">08</h2>
+              <p class="font-normal text-[#717171]">Seconds</p>
             </li>
           </ul>
         </div>
 
         <!-- cards -->
-        <div class="w-full grid grid-cols-4 gap-7">
-          <div class="flex flex-col items-center border">
+        <div class="w-full grid grid-cols-4 gap-6">
+          <div class="flex flex-col items-center border gap-6 py-12">
             <img src="./images/fruit6.png" alt="" />
-            <h4>12.90$ - 18.85$</h4>
+            <h4 class="text-[#121212] text-2xl font-bold">12.90$ - 18.85$</h4>
+            <!-- <hr class="border"> -->
+            <span class="font-normal text-[#717171]">Apples</span>
+
             <div class="rating rating-md rating-half">
               <input type="radio" name="rating-10" class="rating-hidden" />
               <input
@@ -263,9 +270,11 @@
                 class="bg-[#FBC0A8] mask mask-star-2 mask-half-2"
               />
             </div>
-            <span>Apples</span>
             <!-- Open the modal using ID.showModal() method -->
-            <button class="text-[#F85559] text-lg font-bold" onclick="my_modal_1.showModal()">
+            <button
+              class="text-[#F85559] text-lg font-bold"
+              onclick="my_modal_1.showModal()"
+            >
               Details
             </button>
             <dialog id="my_modal_1" class="modal">
@@ -281,9 +290,11 @@
               </form>
             </dialog>
           </div>
-          <div class="flex flex-col items-center border">
+          <div class="flex flex-col items-center border gap-6 py-12">
             <img src="./images/fruit7.png" alt="" />
-            <h4>12.90$ - 18.85$</h4>
+            <h4 class="text-[#121212] text-2xl font-bold">12.90$ - 18.85$</h4>
+            <span class="font-normal text-[#717171]">Orange</span>
+
             <div class="rating rating-md rating-half">
               <input type="radio" name="rating-10" class="rating-hidden" />
               <input
@@ -338,9 +349,11 @@
                 class="bg-[#FBC0A8] mask mask-star-2 mask-half-2"
               />
             </div>
-            <span>Orange</span>
             <!-- Open the modal using ID.showModal() method -->
-            <button class="text-[#F85559] text-lg font-bold" onclick="my_modal_2.showModal()">
+            <button
+              class="text-[#F85559] text-lg font-bold"
+              onclick="my_modal_2.showModal()"
+            >
               Details
             </button>
             <dialog id="my_modal_2" class="modal">
@@ -356,9 +369,11 @@
               </form>
             </dialog>
           </div>
-          <div class="flex flex-col items-center border">
+          <div class="flex flex-col items-center border gap-6 py-12">
             <img src="./images/fruit8.png" alt="" />
-            <h4>12.90$ - 18.85$</h4>
+            <h4 class="text-[#121212] text-2xl font-bold">12.90$ - 18.85$</h4>
+            <span class="font-normal text-[#717171]">Red Dragon</span>
+
             <div class="rating rating-md rating-half">
               <input type="radio" name="rating-10" class="rating-hidden" />
               <input
@@ -413,9 +428,11 @@
                 class="bg-[#FBC0A8] mask mask-star-2 mask-half-2"
               />
             </div>
-            <span>Red Dragon</span>
             <!-- Open the modal using ID.showModal() method -->
-            <button class="text-[#F85559] text-lg font-bold" onclick="my_modal_3.showModal()">
+            <button
+              class="text-[#F85559] text-lg font-bold"
+              onclick="my_modal_3.showModal()"
+            >
               Details
             </button>
             <dialog id="my_modal_3" class="modal">
@@ -431,9 +448,11 @@
               </form>
             </dialog>
           </div>
-          <div class="flex flex-col items-center border">
+          <div class="flex flex-col items-center border gap-6 py-12">
             <img src="./images/fruit9.png" alt="" />
-            <h4>12.90$ - 18.85$</h4>
+            <h4 class="text-[#121212] text-2xl font-bold">12.90$ - 18.85$</h4>
+            <span class="font-normal text-[#717171]">Banana</span>
+
             <div class="rating rating-md rating-half">
               <input type="radio" name="rating-10" class="rating-hidden" />
               <input
@@ -488,9 +507,11 @@
                 class="bg-[#FBC0A8] mask mask-star-2 mask-half-2"
               />
             </div>
-            <span>Banana</span>
             <!-- Open the modal using ID.showModal() method -->
-            <button class="text-[#F85559] text-lg font-bold" onclick="my_modal_4.showModal()">
+            <button
+              class="text-[#F85559] text-lg font-bold"
+              onclick="my_modal_4.showModal()"
+            >
               Details
             </button>
             <dialog id="my_modal_4" class="modal">
@@ -508,7 +529,9 @@
           </div>
         </div>
 
-        <button class="btn btn-primary bg-[#F85559] border-none text-xl font-extrabold capitalize w-fit">
+        <button
+          class="btn btn-primary bg-[#F85559] border-none text-xl font-extrabold capitalize w-fit"
+        >
           Shop All
         </button>
       </section>
